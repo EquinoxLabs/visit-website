@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Safe place to visit / home </title>
+    <!--bootsrap code-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--css code-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--fontawesome codes-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!--google font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+    </style>
+
+    <style>
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        
+        /* Modal Content */
+        .modal-content {
+          position: relative;
+          background-color: #fefefe;
+          margin: auto;
+          padding: 0;
+          border-radius: 10px;
+          border: 1px solid #888;
+          width: 70%;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+          -webkit-animation-name: animatetop;
+          -webkit-animation-duration: 0.4s;
+          animation-name: animatetop;
+          animation-duration: 0.4s
+        }
+        
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+          from {top:-300px; opacity:0} 
+          to {top:0; opacity:1}
+        }
+        
+        @keyframes animatetop {
+          from {top:-300px; opacity:0}
+          to {top:0; opacity:1}
+        }
+        
+        /* The Close Button */
+        .close {
+          color: white;
+          float: right;
+          font-size: 18px;
+          font-weight: bold;
+          padding-right: 15px;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        
+        .Cstmmodal-header {
+            padding: 15px 0px 10px 15px;
+          background-color: #764199bd;
+          color: white;
+          height: 60px;
+          float: left;
+        }
+        
+        .modal-body {
+            padding: 2px 16px;
+
+        }
+      
+    </style>
+
+    
+        
+</head>
+
+<body>
+    
+    <!--Navigation Bar starts-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand ml-3"> <img srcset="images/logo/logo-normal.png" alt="">  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavbarMenu" aria-expanded="false"
+                        aria-controls="#NavbarMenu" aria-label="Toggle Navigation">
+                        <span class="navbar-toggler-icon"> </span>
+                </button>
+
+                <div class="navbar navbar-collapse"></div>  <!--for mobile button to right align-->
+
+                <!--menu list items starts-->
+                <div class="collapse navbar-collapse mr-4" id="NavbarMenu">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="about-us.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="get-certified.html" class="nav-link"> Get Certified </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="contact-us.html" class="nav-link"> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--menu list items ends-->
+        </nav>
+    </header>
+    <!--Navigation Bar ends-->
+
+    <!--main banner section starts-->
+    <div class="container-fluid p-0">
+        <div class="site-content">
+            <div class="d-flex justify-content-center ">
+                <div id="content-desktop"> <!--banner content for desktop starts-->
+                    <div class="d-flex flex-column CstmCntainer">
+                        <h1 class="site-title text-center" > Do you think your establishment is a 
+                        </br> Safe Place to Visit?</h1>
+                        <h3 style=" text-align: center; color: #fff;">Register Today to get Certified!</h3>
+    
+                        <div class="pt-5 text-center" >
+                            <button class="btn btn-outline-light btn-lg" id="myBtn"> Discover More </button>
+                        </div>
+    
+                    </div>
+                </div><!--banner content for desktop ends-->
+
+                <div id="content-mobile"> <!--banner content for mobile starts-->
+                    <div class="d-flex flex-column CstmCntainer">
+                        <h3 class="site-title-mob " > Do you think your establishment is a </br>
+                            Safe Place to Visit?</h3>
+                        <h4 style=" text-align: center; color: #fff;">Register Today to get Certified!</h4>
+    
+                        <div class="pt-5 text-center" >
+                            <button class="btn btn-outline-light btn-lg" id="myBtn"> Discover More </button>
+                        </div>
+    
+                    </div>
+                </div> <!--banner content for mobile ends-->
+                
+            </div>
+        </div>
+    </div>
+    <!--main banner section ends-->
+
+    <!--Form Modal starts-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content starts-->
+        <div class="modal-content">
+            <div class="Cstmmodal-header">
+                <span class="close">&times;</span>
+                <h4> Fill the Form to Join Us </h4>
+            </div>
+            <div class="modal-body">
+                <form id="form_lead" action=" https://equinox.njcrm.in/index.php?entryPoint=web_to_lead& page=SPTSEnquiry&owner=d9d4a204-4f14-dde2-5cd9-5b248b15b30b" method="POST" class="form-container">
+                    <div class="form-group">
+                        <input type="text" id="sname" class="form-control" name="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="semail" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="smobile" class="form-control" name="phone" placeholder="Phone No.">
+                    </div> 
+                    <div class="form-group">
+                        <input type="text" id="scompany" class="form-control" name="account_name" placeholder="Company">
+                    </div> 
+                    <div class="form-group">
+                        <input type="hidden" name="lead_source" value="SPTSEnquiry">
+                        <input type="submit" value="Send Message" class="bton-pop"  >
+                    </div>
+                </form>
+            </div>
+          <!--form script starts-->
+        </div>
+        <!-- Modal content ends-->
+    </div>
+    <!--Form Modal ends-->
+    
+
+    <!-- section after banner section starts-->
+        <div class=" pt-4 pb-4">
+            <div class="container text-center pt-4 pb-4">
+                <h4>
+                    ‘Safe Place to Visit’ is a certification program for social establishments and community spaces across the nation to build, attain, enhance, and uphold their brand value. 
+                </h4>
+            </div>
+        </div>
+    <!-- section after banner section ends-->
+
+    <hr class="CstmHr">
+
+    <!-- second section starts-->
+        <div class="container">
+
+            <div class="row justify-content-start pb-4">
+                <h3 style="color: rgba(227, 37, 40, 0.753) ; font-weight: 600;"> <u> Why do you need a Safe Place to Visit? </u> </h3>       
+            </div>
+
+
+            <div class="row text-left">
+
+                <div class=" col-md-5 ">
+                    <img class=" img-fluid rounded mx-auto d-block" src="images/banners/accomodation.jpg" alt="">
+                </div>
+
+                <div class="col-md-7 ">
+                    <p style="font-size: 17px; text-align: justify; ">
+                        Social facilities such as shopping malls, multiplexes, gyms, clubs, etc. witness massive foot traffic, which in turn brings people into close proximity and amplifies interaction among them. Therefore, it becomes significant for the owners and managers of these establishments to provide a clean, safe space for the visitors to ensure their safety and health.  
+                        </br>
+                        This certification will help in reinforcing the trust and confidence among the consumers and build a strong reputation in the industry. 
+                    </p>
+
+                    <!--button starts-->
+                        <div class=" pt-2 text-left" >
+                            <button class="btn btn-lg btn-Cstm" id="myBtn">Know More</button>
+                        </div>
+                    <!--button ends-->
+
+                    <!--Form Modal starts-->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content starts-->
+                        <div class="modal-content">
+                            <div class="Cstmmodal-header">
+                                <span class="close">&times;</span>
+                                <h4> Fill the Form to Join Us </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form id="form_lead" action=" https://equinox.njcrm.in/index.php?entryPoint=web_to_lead& page=SPTSEnquiry&owner=d9d4a204-4f14-dde2-5cd9-5b248b15b30b" method="POST" class="form-container">
+                                    <div class="form-group">
+                                        <input type="text" id="sname" class="form-control" name="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="semail" class="form-control" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="smobile" class="form-control" name="phone" placeholder="Phone No.">
+                                    </div> 
+                                    <div class="form-group">
+                                        <input type="text" id="scompany" class="form-control" name="account_name" placeholder="Company">
+                                    </div> 
+                                    <div class="form-group">
+                                        <input type="hidden" name="lead_source" value="SPTSEnquiry">
+                                        <input type="submit" value="Send Message" class="bton-pop"  >
+                                    </div>
+                                </form>
+                            </div>
+                        <!--form script starts-->
+                        </div>
+                        <!-- Modal content ends-->
+                    </div>
+                    <!--Form Modal ends-->
+                </div>
+
+            </div>
+
+        </div>
+    <!-- second section ends-->
+
+
+<hr class="CstmHr">
+
+<!-- fourth section starts-->
+<div class="container mt-lg-2">
+
+    <div class="row justify-content-start pb-4">
+        <h3 style="color: rgba(227, 37, 40, 0.753) ; font-weight: 600;"> <u > Benefits</u> </h3>       
+    </div>
+
+
+
+    <!-- Benefits Section 1st row starts-->
+    <div class="container-fluid " >
+        <div class="row" >
+            <div class="col-md-2">
+                <div class="card" >
+                    <div class="card-header text-light" style="background-color: rgba(227, 37, 40, 0.753);"> 360 Safety Assurance  </div>
+                    <div class="card-body" style="padding:10px 15px 10px 15px;">
+                        <p class="card-text ">
+                            Added Brand Value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <div class="card-header text-light" style="background-color: rgba(227, 37, 40, 0.753);" > Professional Guidance </div>
+                    <div class="card-body" style="padding:10px 15px 10px 15px;">
+                        <p class="card-text ">
+                            Build Consumer Trust and Confidence
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card" >
+                    <div class="card-header text-light" style="background-color: rgba(227, 37, 40, 0.753);"> Get Noticed </div>
+                    <div class="card-body" style="padding:10px 15px 10px 15px;">
+                        <p class="card-text ">
+                            Recognition in the industry
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" >
+                    <div class="card-header text-light" style="background-color: rgba(227, 37, 40, 0.753);"> Recognition </div>
+                    <div class="card-body" style="padding:10px 15px 10px 15px;">
+                        <p class="card-text ">
+                            A safe and healthy place to visit
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card" >
+                    <div class="card-header text-light" style="background-color: rgba(227, 37, 40, 0.753);"> Get Noticed </div>
+                    <div class="card-body" style="padding:10px 15px 10px 15px;">
+                        <p class="card-text ">
+                            Improved Business
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Benefits Section 1st row ends-->
+
+
+</div>
+<!-- fourth section ends-->
+
+
+<hr class="CstmHr">
+
+
+<!--Footer Copyright Section starts-->
+    <div class="container-fluid bg-dark pb-3 pt-2">   
+        <div class="footer-copyright text-center text-white-50 py-2 ">
+            &copy;Copyright 2020 <br>
+            <p class="h6 pt-2">  <b>Disclaimer </b> : The Safe Place to Visit standard is a private standard, it is not associated with any government agency or any other international standard. </p>
+        </div>
+    </div>
+
+<!--Footer Copyright Section starts-->
+
+
+</body>
+  <!-- jquery code-->
+  <script src="js/jquery.js"></script>
+  <!--custom js file form form-->
+  <script src="js/Cstmjquery.js"></script>
+  <!--bootstrap code of javascript-->
+  <script src="js/bootstrap.min.js"></script>
+</html>

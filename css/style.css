@@ -1,0 +1,206 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.CstmBody{
+    background-color: rgba(138, 132, 132, 0.089);
+    padding-bottom: 3%;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/** for menu items list**/
+.navbar-nav li{
+    padding : 0px 10px 0px 10px;
+}
+
+/** menu items **/
+.nav-link{ 
+    color: #797272 ;
+    font-size: 18px;
+}
+
+.site-content{
+    background-image: url('../images/banners/visit-banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.site-title{
+    color: #fff;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.site-title-mob{
+    color: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.CstmCntainer{
+    background-color: rgba(227, 37, 40, 0.753);
+    padding: 0px 15px 5% 15px ;
+    border-radius: 10px;
+}
+
+.card-body{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.CstmFormCl{
+    margin-left: 5%;
+    padding: 20px 0px 20px 0px;
+    background-image: url('../images/ot-images/contact.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.txtCstm{
+    padding-top: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.CstmHr{
+    border-style: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.btn-Cstm{
+    background-color: rgba(227, 37, 40, 0.815);
+    color: #fff;
+}
+
+.site-content-thankyou{
+    background-image: url('../images/banners/thanks-banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.CstmCntainer-thankyou{
+    background-color: #764199c5;
+    padding: 0px 15px 15% 15px ;
+    border-radius: 10px;
+}
+
+.display-2{
+    color: #fff;
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+.display-4{
+    color: #fff;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+/* form design*/
+
+input{
+    font-size: 25px;
+    color: rgb(229, 182, 182);
+    padding-left: 5px;
+}
+
+::placeholder{
+    font-size: 14px;
+    color: rgb(34, 31, 31);
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"]{
+    width: 70%;
+    height: 30%;
+    background-color: rgb(245, 239, 239);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+input[type="email"]{
+    width: 70%;
+    height: 10%;
+    background-color: rgb(245, 239, 239);
+    border-radius: 5px;
+    color: rgb(31, 28, 28);
+    border: none;
+}
+
+input[type="tel"]{
+    width: 70%;
+    height: 10%;
+    background-color: rgb(245, 239, 239);
+    border-radius: 5px;
+    border: none;
+}
+
+  .bton{
+        border-radius: 10px;
+        color: #764199;
+        font-size: 100%;
+        padding : 10px 30px 10px 30px;
+        border: 2px solid #fff;
+        text-decoration: none;
+        background-color: #f8f8f8;
+    }
+    
+    .bton:hover{
+        color: #fff;
+        border: 1px solid #fff;
+        box-shadow: 1px 1px 8px 1px rgb(49, 49, 51);
+        background-color: #764199e5;
+    }
+/* form design ends*/
+
+
+/*pop modal custom button starts*/
+.bton-pop{
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    padding : 10px 30px 10px 30px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    background-color: #764199bd;
+}
+
+.bton-pop:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 8px 1px rgb(49, 49, 51);
+}
+/*pop modal custom button ends*/
+
+
+
+/** mobile responsive code (showing the content for mobile and desktop) **/
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
+
+
