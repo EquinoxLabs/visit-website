@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Safe place to visit / about us </title>
+    <title> About Us </title>
     <!--bootsrap code-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--css code-->
@@ -51,7 +51,35 @@
     </header>
     <!--Navigation Bar ends-->
 
+    <!--breadcrumps header code for desktop starts-->
+    <div id="content-desktop">
+        <div class=" container Cstm-headr " >
+            <div class="row  text-white">
+                <div class="col-md-3"> </div>
+                <div class="col-md-6"> 
+                    <p class="text-center" style="font-size: 4em;"> About Us</p>
+                </div>
+                <div class="col-md-3"> </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--breadcrumps header code for desktop ends-->
 
+    <!--breadcrumps header code for mobile starts-->
+    <div id="content-mobile">
+        <div class=" container Cstm-headr " >
+            <div class="row  text-white">
+                <div class="col-md-3"> </div>
+                <div class="col-md-6"> 
+                    <p class="text-center" style="font-size: 2em;"> About Us</p>
+                </div>
+                <div class="col-md-3"> </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--breadcrumps header code for mobile ends-->
     
     <div class="CstmBody">
    
@@ -71,19 +99,19 @@
 
                 
                 <div class=" col-md-5 pl-5 CstmFormCl ">
-                    <p class="h4 text-white"> Fill the Form to Enquire</p>
+                    <p class="h4" style="color: #d82d2d; font-weight: 600;"> Fill the Form to Enquire</p>
                     <form id="form_lead" action=" https://equinox.njcrm.in/index.php?entryPoint=web_to_lead& page=SPTSEnquiry&owner=d9d4a204-4f14-dde2-5cd9-5b248b15b30b" method="POST" class="form-container">
                         <div class="form-group">
-                            <input type="text" id="sname" class="form-control" name="name" placeholder="Name">
+                            <input type="text" id="sname" name="name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" id="semail" class="form-control" name="email" placeholder="Email">
+                            <input type="email" id="semail" name="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="smobile" class="form-control" name="phone" placeholder="Phone No.">
+                            <input type="tel" id="smobile" name="phone" placeholder="Phone No.">
                         </div> 
                         <div class="form-group">
-                        <input type="text" id="scompany" class="form-control" name="account_name" placeholder="Company">
+                        <input type="text" id="scompany" name="account_name" placeholder="Company">
                     </div> 
                         <div class="form-group">
                             <input type="hidden" name="lead_source" value="SPTSEnquiry">
@@ -93,17 +121,6 @@
                     </form>
                 </div>
 
-            </div>
-
-            <div class="row text-left mt-3 pt-3">
-                <p class="h6">
-                    <img src="images/ot-images/directional-sign.png" alt="" style="margin-right: 5px;">
-                    A set of expert-curated paradigms of safety standards whose compliance/non-compliance highlight the efforts of the organization toward its stakeholders.
-                </p>
-                <p class="h6">
-                    <img src="images/ot-images/directional-sign.png" alt="" style="margin-right: 5px;">
-                    The yardstick is set by a group of experts from Facility Management, EHS, Food Safety, and a team of medical doctors.
-                </p>
             </div>
 
         </div>

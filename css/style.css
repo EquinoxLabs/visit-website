@@ -28,6 +28,7 @@ body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    padding: 2% 0 2% 0;
 }
 
 .site-title{
@@ -43,7 +44,7 @@ body{
 }
 
 .CstmCntainer{
-    background-color: rgba(227, 37, 40, 0.753);
+    background-color: rgba(227, 37, 40, 0.836);
     padding: 0px 15px 5% 15px ;
     border-radius: 10px;
 }
@@ -55,11 +56,23 @@ body{
 
 .CstmFormCl{
     margin-left: 5%;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 0px 0px;
     background-image: url('../images/ot-images/contact.jpg');
-    background-position: right;
     background-repeat: no-repeat;
     border-radius: 15px;
+    box-shadow: 1px 1px 7px 1px #888888;
+
+}
+
+.CstmFormcontactus{
+    margin-left: 5%;
+    padding: 20px 0px 0px 0px;
+    background-image: url('../images/ot-images/contact.jpg');
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 1px 1px 7px 1px #888888;
+    background-position: right center;
+
 }
 
 .txtCstm{
@@ -109,14 +122,14 @@ body{
 /* form design*/
 
 input{
-    font-size: 25px;
-    color: rgb(229, 182, 182);
-    padding-left: 5px;
+    font-size: 16px;
+    color: rgb(240, 221, 221);
+    padding: 5px 0 5px 0;
 }
 
 ::placeholder{
     font-size: 14px;
-    color: rgb(34, 31, 31);
+    color: rgb(238, 231, 231);
     padding-left: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -127,46 +140,47 @@ input{
 }
 
 input[type="text"]{
-    width: 70%;
+    width: 65%;
     height: 30%;
-    background-color: rgb(245, 239, 239);
+    background-color: rgb(141, 143, 148);
     border-radius: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     border: none;
 }
 
 input[type="email"]{
-    width: 70%;
+    width: 65%;
     height: 10%;
-    background-color: rgb(245, 239, 239);
+    background-color: rgb(141, 143, 148);
     border-radius: 5px;
-    color: rgb(31, 28, 28);
+    color: rgb(255, 255, 255);
     border: none;
 }
 
 input[type="tel"]{
-    width: 70%;
+    width: 65%;
     height: 10%;
-    background-color: rgb(245, 239, 239);
+    background-color: rgb(141, 143, 148);
     border-radius: 5px;
+    color: rgb(255, 255, 255);
     border: none;
 }
 
   .bton{
         border-radius: 10px;
-        color: #764199;
+        color: #fff;
         font-size: 100%;
         padding : 10px 30px 10px 30px;
         border: 2px solid #fff;
         text-decoration: none;
-        background-color: #f8f8f8;
+        background-color: #E32526;
     }
     
     .bton:hover{
         color: #fff;
         border: 1px solid #fff;
         box-shadow: 1px 1px 8px 1px rgb(49, 49, 51);
-        background-color: #764199e5;
+        background-color: rgba(235, 55, 31, 0.897);
     }
 /* form design ends*/
 
@@ -203,4 +217,14 @@ input[type="tel"]{
 
 }
 
+.hr-certified{
+    width: 50%;
+    text-align:left;
+    margin-left: 0;
+    
+}
 
+.Cstm-headr{
+    padding: 5px 0 5px 0;
+    background-color: rgba(216, 34, 34, 0.808);
+}
